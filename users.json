@@ -1,0 +1,9 @@
+{
+    "users": [
+      {
+        "email": "admin@abc.com",
+        "password": "admin",
+        "confirmpassword":"admin"
+      }
+    ]
+  }

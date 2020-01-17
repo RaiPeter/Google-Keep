@@ -1,0 +1,33 @@
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+<div class="container">
+
+    <div class="col-sm-6 form">
+    <form #form="ngForm" (ngSubmit)="addData(form.value)" >
+      <div class="form-group">
+          <h1>Login</h1>
+        <label>Email</label>
+        <input class="form-control" type="email" name="name" ngModel required/>
+        </div> 
+      
+      <div class="form-group">
+        <label>Password</label>
+          <input class="form-control" type="password" name="runs" ngModel required/>
+      </div>
+    
+  <div *ngIf="isAdded">Login succesfully</div>
+  <div class="buttons">
+      <input type="submit" (click)="mainPage()" value="Login" class="btn btn-primary"> 
+      <input type="submit" (click)="register()" class="btn btn-danger" value="New user? Register here!" >
+    </div>
+    </form>
+
+    
