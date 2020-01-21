@@ -121,14 +121,14 @@
 
   <div class="notes">
 
-    <div class="pinNote" *ngFor="let pin of pinObject">
+    <!-- <div class="pinNote" *ngFor="let pin of pinObject">
       <div class="pinNotes" id="pinNotes"  >
         <textarea style="overflow: hidden; background: none;" spellcheck="false">{{pin.title}} &#x0000A;{{pin.note}} &#x0000A;{{pin.file}}</textarea>
           <div class="icons4">
             <div class="icon4 tick">
               <i class="fa fa-check" aria-hidden="true"></i>
             </div>
-            <div class="icon4 pin" id="pin" (click)="pinNote(notes.id)">
+            <div class="icon4 pin" id="pin" (click)="pinNote(pin.id)">
               <i class="fa fa-thumb-tack" aria-hidden="true"></i>
             </div>
             <div class="icon4"> 
@@ -157,7 +157,7 @@
           </div>
       </div>
      
-    </div>
+    </div> -->
 
      <div class="note">
       <div class="allNotes" id="allNotes" *ngFor="let notes of notesObject"  onmouseover="display(notes.id)">

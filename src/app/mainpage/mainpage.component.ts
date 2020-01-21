@@ -98,6 +98,13 @@ document.getElementById('notebarmain').style.display="none";
       document.getElementById('notebarmain').style.display="none";
   
     })
+    // document.getElementById('opennote').addEventListener('mouseout',()=>{
+    //   document.getElementById('opennote').style.display="none";
+
+    //   document.getElementById('notebarmain').style.display="block";
+      
+    // })
+
     document.getElementById('close').addEventListener('click',()=>{
       // document.getElementById('icons').style.display="none";
       document.getElementById('opennote').style.display="none";
