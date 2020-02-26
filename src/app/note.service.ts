@@ -9,7 +9,7 @@ import { Note } from 'note';
 export class NoteService {
 
   constructor(private http:HttpClient) { }
-url:string="http://localhost:5500/note";
+url:string="http://localhost:3000/note";
 
 fetchData():Observable<Note[]>{
   return this.http.get<Note[]>(this.url);

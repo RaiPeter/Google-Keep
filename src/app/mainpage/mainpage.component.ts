@@ -16,7 +16,7 @@ notes=[];
 
   isAdded:boolean;
 constructor(private httpref:NoteService,private http:HttpClient,private route:ActivatedRoute) { }
-url:string="http://localhost:5500/note";
+url:string="http://localhost:3000/note";
 
 notesObject:object={
   'title':'',
@@ -30,7 +30,7 @@ pinObject:object={
 }
 
 pinNote(id,title,notes,file){
-  const url:string="http://localhost:5500/note/"+id;
+  const url:string="http://localhost:3000/note/"+id;
 console.log(id)
 console.log(title)
 console.log(notes)
@@ -49,7 +49,7 @@ deleteOption(id){
 
 
 deleteData(id){
-const url:string=`http://localhost:5500/note/${id}`;
+const url:string=`http://localhost:3000/note/${id}`;
 this.http.delete(url).toPromise().then(()=>{
   this.httpref.fetchData().subscribe(data=>{
     this.notesObject=data;
