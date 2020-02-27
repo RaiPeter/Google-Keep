@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "json:server": "json-server --watch note1.json"
+    "json-server": "json-server --watch note1.json --port 5500"
   },
   "private": true,
   "dependencies": {
