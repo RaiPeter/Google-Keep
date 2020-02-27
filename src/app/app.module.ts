@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from "@angular/common/http";
+import {HttpModule} from '@angular/http';
 
 import { FormsModule } from "@angular/forms";
 import { AppRoutingModule } from './app-routing.module';
@@ -34,7 +35,8 @@ const routes:Routes=[
     AppRoutingModule,
     FormsModule,
     RouterModule.forRoot(routes),
-    HttpClientModule
+    HttpClientModule,
+    HttpModule
   ],
   exports: [RouterModule],
   providers: [NoteService],
