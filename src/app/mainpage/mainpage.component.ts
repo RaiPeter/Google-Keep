@@ -41,7 +41,19 @@ export class MainpageComponent implements OnInit {
     })
   }
   
-  
+  focusoutFunction(title,note,id){
+    console.log(title);
+    
+    return this.http.put(this.url,this.url+'/'+id).subscribe((response:Response)=>{
+      this.isAdded=true;
+      
+      this.httpref.fetchData().subscribe(data=>{
+        this.notesObject=data
+        
+      })
+    })
+  }
+
   deleteOption(id){  
     console.log(id)
     document.getElementById('options').style.display="block";
@@ -74,6 +86,11 @@ export class MainpageComponent implements OnInit {
     return this.http.post(this.url,this.notesObject).subscribe((response:Response)=>{
       this.isAdded=true;
       console.log(form.value.id)  
+      this.httpref.fetchData().subscribe(data=>{
+        this.notesObject=data
+        console.log(this.notesObject)
+        
+      })
     })
   }
   upload(id){

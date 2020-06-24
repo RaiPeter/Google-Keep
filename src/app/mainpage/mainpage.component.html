@@ -29,186 +29,187 @@
 <div class="body" id="body">
   <div class="notebararea">
     <form (ngSubmit)="onSubmit(form)" #form="ngForm">
-    <div class="opennote" id="opennote" style="display: none;">
-      <div class="notebar" id="notebar">
-        <div class="inputTitle">
-          <input type="text" ngModel spellcheck="false" autocomplete="off" id="inputTitle" name="title" placeholder="Title"/></div>
+      <div class="opennote" id="opennote" style="display: none;">
+        <div class="notebar" id="notebar">
+          <div class="inputTitle">
+            <input type="text" ngModel spellcheck="false" autocomplete="off" id="inputTitle" name="title" placeholder="Title"/></div>
+            
+            <div class="iconPin">
+              <i class="fa fa-thumb-tack" aria-hidden="true"></i>
+            </div>
+            <div class="inputNote">
+              <input type="text" ngModel id="inputNote" spellcheck="false" autocomplete="off" name="note" placeholder="Take a note..." ></div>
+              
+              <div>
+                <div class="icons2">
+                  <div class="icon2"> 
+                    <i title="Remind Me" class="fa fa-bell"></i>
+                  </div>
+                  <div class="icon2">
+                    <i class="fa fa-address-book" title="Collaborator" aria-hidden="true"></i>
+                  </div>
+                  <div class="icon2">
+                    <i class="fa fa-paint-brush" title="Change Colour" id="brush" aria-hidden="true"></i>
+                  </div>
+                  <div class="icon2">
+                    <i class="fa fa-file-image-o" title="Add Image" id="upload">
+                      <input type="file" ngModel name="file" id="file">
+                    </i>
+                  </div>
+                  <div class="icon2">
+                    <i class="fa fa-archive" title="Archive" aria-hidden="true"></i>
+                  </div>
+                  <div class="icon2">
+                    <i class="fa fa-ellipsis-v" title="More" aria-hidden="true"></i>
+                  </div>
+                  <div class="icon2">
+                    <i class="fa fa-reply" aria-hidden="true"></i>
+                  </div>
+                  <div class="icon2">
+                    <i class="fa fa-share" aria-hidden="true"></i>
+                  </div>
+                  <div class="icon3 close" id="close"><button class="btn" type="submit">Close</button></div>
+                  
+                </div>
+              </div>
+              
+            </div>
+            
+          </div>
+        </form>
+        <div class="colourpalette" id="colourpalette">
+          <div class="colours" id="colour1"></div>
+          <div class="colours" id="colour2"></div>
+          <div class="colours" id="colour3"></div>
+          <div class="colours" id="colour4"></div>
+          <div class="colours" id="colour5"></div>
+          <div class="colours" id="colour6"></div>
+          <div class="colours" id="colour7"></div>
+          <div class="colours" id="colour8"></div>
+          <div class="colours" id="colour9"></div>
+          <div class="colours" id="colour10"></div>
+          <div class="colours" id="colour11"></div>
+          <div class="colours" id="colour12"></div>
           
-        <div class="iconPin">
-          <i class="fa fa-thumb-tack" aria-hidden="true"></i>
         </div>
-        <div class="inputNote">
-           <input type="text" ngModel id="inputNote" spellcheck="false" autocomplete="off" name="note" placeholder="Take a note..." ></div>
         
-        <div>
-          <div class="icons2">
-            <div class="icon2"> 
-              <i title="Remind Me" class="fa fa-bell"></i>
+        <div class="mainnotearea" id="notebarmain">
+          <div class="notebarmain">
+            <div class="inputNote"> 
+              <input type="text" id="inputNoteMain" name="note" autocomplete="off" placeholder="Take a note..." ></div>
+              
+              <div class="icons" id="icons">
+                <div class="icon"> 
+                  <i class="fa fa-check-square" title="New List"></i>
+                </div>
+                <div class="icon">
+                  <i class="fa fa-paint-brush" title="Change Colour"></i>
+                </div>
+                <div class="icon">
+                  <i class="fa fa-file-image-o" title="Add Image" id="uploadfile"></i>
+                </div>
+              </div>
+              
+              <div>
+                
+              </div>
             </div>
-            <div class="icon2">
-              <i class="fa fa-address-book" title="Collaborator" aria-hidden="true"></i>
-            </div>
-            <div class="icon2">
-              <i class="fa fa-paint-brush" title="Change Colour" id="brush" aria-hidden="true"></i>
-            </div>
-            <div class="icon2">
-              <i class="fa fa-file-image-o" title="Add Image" id="upload">
-                <input type="file" ngModel name="file" id="file">
-              </i>
-            </div>
-            <div class="icon2">
-              <i class="fa fa-archive" title="Archive" aria-hidden="true"></i>
-            </div>
-            <div class="icon2">
-              <i class="fa fa-ellipsis-v" title="More" aria-hidden="true"></i>
-            </div>
-            <div class="icon2">
-              <i class="fa fa-reply" aria-hidden="true"></i>
-            </div>
-            <div class="icon2">
-              <i class="fa fa-share" aria-hidden="true"></i>
-            </div>
-            <div class="icon3 close" id="close"><button class="btn" type="submit">Close</button></div>
-          
-          </div>
-        </div>
-       
-    </div>
-    
-  </div>
-    </form>
-  <div class="colourpalette" id="colourpalette">
-  <div class="colours" id="colour1"></div>
-  <div class="colours" id="colour2"></div>
-  <div class="colours" id="colour3"></div>
-  <div class="colours" id="colour4"></div>
-  <div class="colours" id="colour5"></div>
-  <div class="colours" id="colour6"></div>
-  <div class="colours" id="colour7"></div>
-  <div class="colours" id="colour8"></div>
-  <div class="colours" id="colour9"></div>
-  <div class="colours" id="colour10"></div>
-  <div class="colours" id="colour11"></div>
-  <div class="colours" id="colour12"></div>
-  
-  </div>
-
-    <div class="mainnotearea" id="notebarmain">
-      <div class="notebarmain">
-        <div class="inputNote"> 
-          <input type="text" id="inputNoteMain" name="note" autocomplete="off" placeholder="Take a note..." ></div>
-          
-          <div class="icons" id="icons">
-            <div class="icon"> 
-              <i class="fa fa-check-square" title="New List"></i>
-            </div>
-            <div class="icon">
-              <i class="fa fa-paint-brush" title="Change Colour"></i>
-            </div>
-            <div class="icon">
-              <i class="fa fa-file-image-o" title="Add Image" id="uploadfile"></i>
-            </div>
-          </div>
-          
-          <div>
             
           </div>
         </div>
         
-      </div>
-  </div>
-
-
-  <div class="notes">
-
-    <!-- <div class="pinNote" *ngFor="let pin of pinObject">
-      <div class="pinNotes" id="pinNotes"  >
-        <textarea style="overflow: hidden; background: none;" spellcheck="false">{{pin.title}} &#x0000A;{{pin.note}} &#x0000A;{{pin.file}}</textarea>
-          <div class="icons4">
-            <div class="icon4 tick">
-              <i class="fa fa-check" aria-hidden="true"></i>
-            </div>
-            <div class="icon4 pin" id="pin" (click)="pinNote(pin.id)">
-              <i class="fa fa-thumb-tack" aria-hidden="true"></i>
-            </div>
-            <div class="icon4"> 
-              <i title="bell" class="fa fa-bell"></i>
-            </div>
-            <div class="icon4">
-              <i class="fa fa-address-book" aria-hidden="true"></i>
-            </div>
-            <div class="icon4">
-              <i class="fa fa-paint-brush" aria-hidden="true"></i>
-            </div>
-            <div class="icon4">
-              <i class="fa fa-file-image-o"></i>
-            </div>
-            <div class="icon4">
-              <i class="fa fa-archive" aria-hidden="true"></i>
-            </div>
-            <div class="icon4 " id="option" (click)="deleteOption(notes.id)">
-                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-              <div class="options" id="options">
-                <span id="deleteNote" (click)="deleteData(notes.id)">
-                  Delete Note
-                </span>
-              </div>
-            </div>
-          </div>
-      </div>
-     
-    </div> -->
-
-     <div class="note">
-      <div class="allNotes" id="allNotes" *ngFor="let notes of notesObject"  onmouseover="display(notes.id)">
-        <textarea style="overflow: hidden; background: none;" spellcheck="false">{{notes.title}} &#x0000A;{{notes.note}} &#x0000A;{{notes.file}}</textarea>
-          <div class="icons4">
-            <div class="icon4 tick">
-              <i class="fa fa-check" aria-hidden="true"></i>
-            </div>
-            <div class="icon4 pin" id="pin" (click)="pinNote(notes.id,notes.note,notes.title,notes.file)">
-              <i class="fa fa-thumb-tack" aria-hidden="true"></i>
-            </div>
-            <div class="icon4"> 
-              <i title="Reminder" class="fa fa-bell"></i>
-            </div>
-            <div class="icon4">
-              <i class="fa fa-address-book" title="Collaborate" aria-hidden="true"></i>
-            </div>
-            <div class="icon4">
-              <i class="fa fa-paint-brush" title="ChangeColour" aria-hidden="true"></i>
-            </div>
-            <div class="icon4">
-              <i class="fa fa-file-image-o" title="Add Image" (click)="upload(notes.id)"></i>
-            </div>
-            <div class="icon4">
-              <i class="fa fa-archive" title="Archive" aria-hidden="true"></i>
-            </div>
-            <!-- (click)="deleteOption(notes.id) -->
-            <div class="icon4 " id="delete"  (click)="deleteOption(notes.id)" >
-                <i class="fa fa-ellipsis-v" title="More" aria-hidden="true"></i>
+        
+        <div class="notes">
+          
+          <!-- <div class="pinNote" *ngFor="let pin of pinObject">
+            <div class="pinNotes" id="pinNotes"  >
+              <textarea style="overflow: hidden; background: none;" spellcheck="false">{{pin.title}} &#x0000A;{{pin.note}} &#x0000A;{{pin.file}}</textarea>
+              <div class="icons4">
+                <div class="icon4 tick">
+                  <i class="fa fa-check" aria-hidden="true"></i>
+                </div>
+                <div class="icon4 pin" id="pin" (click)="pinNote(pin.id)">
+                  <i class="fa fa-thumb-tack" aria-hidden="true"></i>
+                </div>
+                <div class="icon4"> 
+                  <i title="bell" class="fa fa-bell"></i>
+                </div>
+                <div class="icon4">
+                  <i class="fa fa-address-book" aria-hidden="true"></i>
+                </div>
+                <div class="icon4">
+                  <i class="fa fa-paint-brush" aria-hidden="true"></i>
+                </div>
+                <div class="icon4">
+                  <i class="fa fa-file-image-o"></i>
+                </div>
+                <div class="icon4">
+                  <i class="fa fa-archive" aria-hidden="true"></i>
+                </div>
+                <div class="icon4 " id="option" (click)="deleteOption(notes.id)">
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
                   <div class="options" id="options">
                     <span id="deleteNote" (click)="deleteData(notes.id)">
                       Delete Note
                     </span>
                   </div>
-
+                </div>
+              </div>
+            </div>
+            
+          </div> -->
+          
+          <div class="note">
+            <div class="allNotes" id="allNotes" *ngFor="let notes of notesObject"  onmouseover="display(notes.id)">
+              <textarea style="overflow: hidden; background: none;" (focusout)="focusoutFunction(notes.title,notes.note,notes.id)" spellcheck="false">{{notes.title}} &#x0000A;{{notes.note}} &#x0000A;{{notes.file}}</textarea>
+              <div class="icons4">
+                <div class="icon4 tick">
+                  <i class="fa fa-check" aria-hidden="true"></i>
+                </div>
+                <div class="icon4 pin" id="pin" (click)="pinNote(notes.id,notes.note,notes.title,notes.file)">
+                  <i class="fa fa-thumb-tack" aria-hidden="true"></i>
+                </div>
+                <div class="icon4"> 
+                  <i title="Reminder" class="fa fa-bell"></i>
+                </div>
+                <div class="icon4">
+                  <i class="fa fa-address-book" title="Collaborate" aria-hidden="true"></i>
+                </div>
+                <div class="icon4">
+                  <i class="fa fa-paint-brush" title="ChangeColour" aria-hidden="true"></i>
+                </div>
+                <div class="icon4">
+                  <i class="fa fa-file-image-o" title="Add Image" (click)="upload(notes.id)"></i>
+                </div>
+                <div class="icon4">
+                  <i class="fa fa-archive" title="Archive" aria-hidden="true"></i>
+                </div>
+                <!-- (click)="deleteOption(notes.id) -->
+                <div class="icon4 " id="delete"  (click)="deleteOption(notes.id)" >
+                  <i class="fa fa-ellipsis-v" title="More" aria-hidden="true"></i>
+                  <div class="options" id="options">
+                    <span id="deleteNote" (click)="deleteData(notes.id)">
+                      Delete Note
+                    </span>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+            
           </div>
-          </div>
+          
+          
+          <!-- // -->
+          
+        </div>
+        
+        <!-- <script>
+          function display(id){
+            console.log(id)
+            document.getElementById('icons4').style.display="inline-block";
+          }
+        </script> -->
+        
       </div>
-     
-      </div>
-    
-  
-      <!-- // -->
-
-  </div>
-   
-  <!-- <script>
-    function display(id){
-   console.log(id)
-    document.getElementById('icons4').style.display="inline-block";
-  }
-    </script> -->
-  
-  </div>
+      
