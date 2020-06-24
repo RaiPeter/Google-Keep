@@ -14,7 +14,7 @@ import { NoteService } from './note.service';
 import { NotesComponent } from './notes/notes.component';
 
 const routes:Routes=[
-  {path:"",component:LoginformComponent},
+  {path:"",component:MainpageComponent},
   {path:"mainpage",component:MainpageComponent},
   {path:"notes",component:NotesComponent},
   {path:"register",component:RegisterComponent}
